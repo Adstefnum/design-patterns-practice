@@ -1,8 +1,8 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
-from ChairInterface import ChairInterface
-from SofaInterface import SofaInterface
-from CoffeeTableInterface import CoffeeTableInterface
+from Interfaces.ChairInterface import ChairInterface
+from Interfaces.SofaInterface import SofaInterface
+from Interfaces.CoffeeTableInterface import CoffeeTableInterface
 
 class AbstractFactory(ABC):
 
