@@ -1,4 +1,4 @@
-from CoffeeTableInterface import CoffeeTableInterface
+from Interfaces.CoffeeTableInterface import CoffeeTableInterface
 
 class VictorianEraCoffeeTable(CoffeeTableInterface):
 
@@ -7,4 +7,4 @@ class VictorianEraCoffeeTable(CoffeeTableInterface):
 
   def CaclculateMaxSensibleHeight(self)->float:
     return 20.0
-    
+

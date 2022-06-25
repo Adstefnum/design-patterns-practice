@@ -1,6 +1,6 @@
-from AbstractFactoryInterface import AbstractFactory
-from ModernEraFactory import ModernEraFactory
-from VictorianEraFactory import VictorianEraFactory
+from Factories.AbstractFactoryInterface import AbstractFactory
+from Factories.ModernEraFactory import ModernEraFactory
+from Factories.VictorianEraFactory import VictorianEraFactory
 
 def client(factory:AbstractFactory)->None:
   chair = factory.CreateChair()

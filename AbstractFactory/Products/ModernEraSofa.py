@@ -1,4 +1,4 @@
-from SofaInterface import SofaInterface
+from Interfaces.SofaInterface import SofaInterface
 
 class ModernEraSofa(SofaInterface):
 
@@ -7,4 +7,4 @@ class ModernEraSofa(SofaInterface):
 
   def HasSoftSurface(self)->bool:
     return True
-    
+

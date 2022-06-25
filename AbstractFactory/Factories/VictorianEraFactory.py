@@ -1,12 +1,12 @@
-from AbstractFactoryInterface import AbstractFactory
-from VictorianEraChair import VictorianEraChair
-from VictorianEraSofa import VictorianEraSofa
-from VictorianEraCoffeeTable import VictorianEraCoffeeTable
-from ChairInterface import ChairInterface
-from SofaInterface import SofaInterface
-from CoffeeTableInterface import CoffeeTableInterface
+from Factories.AbstractFactoryInterface import AbstractFactory
+from Products.VictorianEraChair import VictorianEraChair
+from Products.VictorianEraSofa import VictorianEraSofa
+from Products.VictorianEraCoffeeTable import VictorianEraCoffeeTable
+from Interfaces.ChairInterface import ChairInterface
+from Interfaces.SofaInterface import SofaInterface
+from Interfaces.CoffeeTableInterface import CoffeeTableInterface
 
-class VictorianEraFactory(AbstractFactory):  
+class VictorianEraFactory(AbstractFactory):
   def CreateChair(self)->ChairInterface:
     return VictorianEraChair()
 
@@ -15,4 +15,4 @@ class VictorianEraFactory(AbstractFactory):
 
   def CreateCoffeeTable(self)->CoffeeTableInterface:
     return VictorianEraCoffeeTable()
-  
+

@@ -17,4 +17,4 @@ class AbstractFactory(ABC):
   @abstractmethod
   def CreateCoffeeTable(self)->CoffeeTableInterface:
     pass
-    
+
