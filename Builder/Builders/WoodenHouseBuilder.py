@@ -1,30 +1,42 @@
-from ..BuilderFactoryInterface import BuilderFactory
+from BuilderInterface import Builder
+from Products.WoodenHouse import WoodenHouse
 
-class woodenHouseBuilder(BuilderFactory):
+class WoodenHouseBuilder(Builder):
 
-  def buildFoundation()->str:
-    return "Wooden Foundation built"
+  def __init__(self)->None:
+        self.reset()
 
+  def reset(self)->None:
+        self._product = WoodenHouse()
 
-  def buildWalls()->str:
-    return "Wooden Walls built"
+  @property
+  def product(self)->WoodenHouse:
+      product = self._product
+      self.reset()
+      return product
 
-
-  def buildRooms()->str:
-    return "Wooden Rooms furnished"
-
-
-  def buildDoors()->str:
-    return "Wooden Victorian Doors built"
-
-
-  def buildWindows()->str:
-    "Haha of course we used glass windows"
+  def buildFoundation(self)->None:
+    self._product.add("Wooden Foundation built")
 
 
-  def buildRoof()->str:
-    return "Wooden roof put up"
+  def buildWalls(self)->None:
+    self._product.add("Wooden Walls built")
 
 
-  def buildSwimmingPool()->str:
-    "No swimming pool for this wooden house"
+  def buildRooms(self)->None:
+    self._product.add("Wooden Rooms furnished")
+
+
+  def buildDoors(self)->None:
+    self._product.add("Wooden Victorian Doors built")
+
+
+  def buildWindows(self)->None:
+    self._product.add("Haha of course we used glass windows")
+
+  def buildRoof(self)->None:
+    self._product.add("Wooden roof put up")
+
+  def buildSwimmingPool(self)->None:
+    self._product.add("Sweet sweet swimming pool")
+
