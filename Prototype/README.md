@@ -1,1 +1,2 @@
-The prototype pattern essentially allows us to copy an object even a complex one without relying on the specific class of the object
+- The prototype pattern essentially allows us to copy an object even a complex one without relying on the specific class of the object
+- The implementation here is python specific, in other languages you might have to implement the copying more manually especially for languages without functionality for copying.
